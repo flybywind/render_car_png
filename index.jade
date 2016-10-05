@@ -1,0 +1,39 @@
+html
+  head
+    meta(charset="utf8")
+    link(rel="stylesheet", href="style.css")
+   body(ng-app="Demo")
+    .container(ng-controller="RenderCtrl")
+      ul.color-list
+        li
+          ul.sub-color
+            li.color0(color-clicker)
+              span(data-tooltip="red0")
+            li.color(color-clicker)
+              span(data-tooltip="red")
+            li.color1(color-clicker)
+              span(data-tooltip="red1")
+        li
+          ul.sub-color
+            li.color0(color-clicker)
+              span(data-tooltip="green0")
+            li.color(color-clicker)
+              span(data-tooltip="green")
+            li.color1(color-clicker)
+              span(data-tooltip="green1")
+        li
+          ul.sub-color    
+            li.color0(color-clicker)
+              span(data-tooltip="blue0")
+            li.color(color-clicker)
+              span(data-tooltip="blue")
+            li.color1(color-clicker)
+              span(data-tooltip="blue1")
+      .shader
+        .background
+        .surface
+      img(src="car.png") 
+    
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+    script(src="http://cdn.bootcss.com/angular.js/1.5.8/angular.js")
+    script(src="app.js")
